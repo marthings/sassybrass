@@ -1,0 +1,21 @@
+/*
+Project name: Sassybrass
+Description: Boilerplate for starting up a new frontend project
+Version: 0.1
+Author: Martin Berggren
+*/
+
+@import "global/variables";
+
+@import "scaffold/reset";
+@import "scaffold/normalize";
+@import "scaffold/reboot";
+
+@import "base/typography";
+@import "base/forms";
+@import "base/images";
+
+@import "components/button";
+
+@import "layout/grid";
+@import "layout/skeleton";
