@@ -6,16 +6,17 @@ Author: Martin Berggren
 */
 
 @import "global/variables";
+@import "global/functions";
+@import "global/mixins";
 
-@import "scaffold/reset";
-@import "scaffold/normalize";
-@import "scaffold/reboot";
-
+@import "base/reset";
+@import "base/normalize";
+@import "base/reboot";
 @import "base/typography";
-@import "base/forms";
 @import "base/images";
 
 @import "components/button";
 
 @import "layout/grid";
+@import "layout/forms";
 @import "layout/skeleton";
