@@ -16,8 +16,12 @@ $spacer: 1rem;
 
 $color-primary: #bed;
 
-// Typography
-
 // Layout
 
 $container-width: 880px;
+
+// Breakpoints
+
+$bp-large: 1200px;
+$bp-medium: 992px;
+$bp-small: 768px;
