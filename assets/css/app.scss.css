@@ -5,18 +5,29 @@ Version: 0.1
 Author: Martin Berggren
 */
 
+/* Global */
 @import "global/variables";
 @import "global/functions";
 @import "global/mixins";
 
+/* Base */
 @import "base/reset";
 @import "base/normalize";
 @import "base/reboot";
 @import "base/typography";
+@import "base/forms";
 @import "base/images";
 
+/* Components */
 @import "components/button";
+@import "components/card";
 
+/* Layout */
 @import "layout/grid";
-@import "layout/forms";
 @import "layout/skeleton";
+
+/* Pages */
+
+/* Helpers */
+
+/* Vendor */
