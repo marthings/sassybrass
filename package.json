@@ -5,13 +5,13 @@
     "autoprefixer": "^6.3.6",
     "coffee-script": "^1.0.0",
     "css-pipeline": "0.3.x",
-    "jade": "^1.0.0",
     "jquery": "^2.2.3",
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "^1.0.0",
     "marked": "0.3.x",
     "node-sass": "^3.4.2",
     "postcss": "^5.0.19",
+    "pug": "^2.0.0-alpha6",
     "roots-yaml": "0.0.4"
   }
 }
