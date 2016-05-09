@@ -1,0 +1,92 @@
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+body {
+  font-size: $global-font-size;
+  @include responsive-font(3vw, 15px, 16px);
+  font-family: $font-family;
+  line-height: $line-height;
+}
+
+p {
+  margin-bottom:0.8rem;
+}
+
+.hero-heading {
+  @include responsive-font(3vw, 48px, 64px);
+}
+
+h1,
+.h1 {
+  @include responsive-font(3vw, 28px, 32px);
+}
+
+h2,
+.h2 {
+  @include responsive-font(3vw, 21px, 24px);
+}
+
+h3,
+.h3 {
+  @include responsive-font(3vw, 18px, 21px);
+}
+
+h4,
+.h4 {
+  @include responsive-font(3vw, 16px, 18px);
+}
+
+.text-small {
+  @include responsive-font(3vw, 13px, 14px);
+}
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.text-focus {
+  color: $color-focus;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-error {
+  color: $color-error;
+}
+
+.lead {
+  @include responsive-font(3vw, 18px, 21px);
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  margin: 0;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+}

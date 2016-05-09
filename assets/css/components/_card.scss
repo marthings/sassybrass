@@ -1,0 +1,12 @@
+.card {
+  box-shadow: $global-shadow;
+  border-radius: $global-radius;
+}
+
+.card__image {
+  margin: 0;
+}
+
+.card__content {
+  padding: $global-padding / 2 $global-padding;
+}

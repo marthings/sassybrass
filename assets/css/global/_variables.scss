@@ -1,27 +1,75 @@
 // Default
 
-$rem-base: 1rem;
+$rem-base:              16px !default;
 
-$font-size: $rem-base;
-$line-height: 1.5;
-$font-family: "helvetica", arial, sans-serif;
-$heading-font-family: $font-family;
-$font-weight-bold: 700;
+$global-font-size:      100% !default;
+$line-height:           1.5 !default;
+$font-family:           "helvetica", arial, sans-serif !default;
+$font-weight-bold:      700 !default;
 
-$border-radius: 3px;
-$box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
-$spacer: 1rem;
+$heading-font-family:   $font-family !default;
+$heading-font-weight:   500 !default;
+$heading-line-height:   1.2 !default;
+
+// Global defaults
+
+$global-shadow:         0px 0px 4px 0px rgba(0,0,0,0.1) !default;
+$global-spacer:         rem-calc(20px) !default;
+$global-padding:        rem-calc(20px) !default;
+$global-radius:         0px !default;
+$global-circle:         100% !default;
+$global-border:         #d6d6d6 !default;
+
+// Utilities
+
+$utility-prefix:        null !default;
 
 // Colors
 
-$color-primary: #bed;
+$color-primary:         #0F447B !default;
+$color-secondary:       #2E2E2E !default;
+$color-tertiary:        #d80017 !default;
+$color-grey:            #f4f4f4 !default;
 
-// Layout
+$color-focus:           #4A90E2 !default;
+$color-error:           #EC354C !default;
+$color-success:         #54B563 !default;
 
-$container-width: 880px;
+// Layout & This is bootstrap 4 grid.
 
-// Breakpoints
+$enable-flex:           false !default;
+$enable-grid-classes:   true !default;
+$row-prefix:            null !default;
+$col-prefix:            null !default;
+$container-width:       rem-calc(1170px);
 
-$bp-large: 1200px;
-$bp-medium: 992px;
-$bp-small: 768px;
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: rem-calc(544px),
+  // Medium screen / tablet
+  md: rem-calc(768px),
+  // Large screen / desktop
+  lg: rem-calc(992px),
+  // Extra large screen / wide desktop
+  xl: rem-calc(1200px)
+) !default;
+
+$grid-columns:               12 !default;
+$grid-gutter-width:          $global-spacer !default; // 30px
+
+// Icons
+
+$icon-size:         24px !default;
+
+// Button
+
+$btn-color:         $color-primary !default;
+$btn-padding:       rem-calc(10px) rem-calc(15px) !default;
+$btn-text-color:    #fff !default;
+
+// Forms
+
+$form-border-color: $global-border !default;
+$form-padding:      rem-calc(10px) rem-calc(15px) !default;

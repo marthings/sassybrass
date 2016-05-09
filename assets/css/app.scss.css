@@ -6,9 +6,12 @@ Author: Martin Berggren
 */
 
 /* Global */
-@import "global/variables";
 @import "global/functions";
-@import "global/mixins";
+@import "global/variables";
+@import "global/mixins/clearfix";
+@import "global/mixins/breakpoints";
+@import "global/mixins/grid-framework";
+@import "global/mixins/grid";
 
 /* Base */
 @import "base/reset";
@@ -16,7 +19,6 @@ Author: Martin Berggren
 @import "base/reboot";
 @import "base/typography";
 @import "base/forms";
-@import "base/images";
 
 /* Components */
 @import "components/button";
@@ -24,7 +26,6 @@ Author: Martin Berggren
 
 /* Layout */
 @import "layout/grid";
-@import "layout/skeleton";
 
 /* Pages */
 

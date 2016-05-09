@@ -1,107 +1,111 @@
 // Position state
 
-.relative { position: relative }
-.absolute { position: absolute }
-.fixed    { position: fixed }
+.#{$utility-prefix}relative { position: relative }
+.#{$utility-prefix}absolute { position: absolute }
+.#{$utility-prefix}fixed    { position: fixed }
 
 // Display
 
-.inline       { display: inline }
-.block        { display: block }
-.inline-block { display: inline-block }
-.table        { display: table }
-.table-cell   { display: table-cell }
+.#{$utility-prefix}inline       { display: inline }
+.#{$utility-prefix}block        { display: block }
+.#{$utility-prefix}inline-block { display: inline-block }
+.#{$utility-prefix}table        { display: table }
+.#{$utility-prefix}table-cell   { display: table-cell }
 
-.overflow-hidden { overflow: hidden }
-.overflow-scroll { overflow: scroll }
-.overflow-auto   { overflow: auto }
+.#{$utility-prefix}overflow-hidden { overflow: hidden }
+.#{$utility-prefix}overflow-scroll { overflow: scroll }
+.#{$utility-prefix}overflow-auto   { overflow: auto }
 
-.clearfix:before,
-.clearfix:after {
+.#{$utility-prefix}clearfix:before,
+.#{$utility-prefix}clearfix:after {
   content: " ";
   display: table
 }
-.clearfix:after { clear: both }
+.#{$utility-prefix}clearfix:after { clear: both }
 
-.left  { float: left }
-.right { float: right }
+.#{$utility-prefix}left  { float: left }
+.#{$utility-prefix}right { float: right }
 
-.fit { max-width: 100% }
+.#{$utility-prefix}fit { max-width: 100% }
 
 // Flexbox
 
-.flex-column  { flex-direction: column }
-.flex-wrap    { flex-wrap: wrap }
+.#{$utility-prefix}flex-column  { flex-direction: column }
+.#{$utility-prefix}flex-wrap    { flex-wrap: wrap }
 
-.items-start    { align-items: flex-start }
-.items-end      { align-items: flex-end }
-.items-center   { align-items: center }
-.items-baseline { align-items: baseline }
-.items-stretch  { align-items: stretch }
+.#{$utility-prefix}items-start    { align-items: flex-start }
+.#{$utility-prefix}items-end      { align-items: flex-end }
+.#{$utility-prefix}items-center   { align-items: center }
+.#{$utility-prefix}items-baseline { align-items: baseline }
+.#{$utility-prefix}items-stretch  { align-items: stretch }
 
-.self-start    { align-self: flex-start }
-.self-end      { align-self: flex-end }
-.self-center   { align-self: center }
-.self-baseline { align-self: baseline }
-.self-stretch  { align-self: stretch }
+.#{$utility-prefix}self-start    { align-self: flex-start }
+.#{$utility-prefix}self-end      { align-self: flex-end }
+.#{$utility-prefix}self-center   { align-self: center }
+.#{$utility-prefix}self-baseline { align-self: baseline }
+.#{$utility-prefix}self-stretch  { align-self: stretch }
 
-.justify-start   { justify-content: flex-start }
-.justify-end     { justify-content: flex-end }
-.justify-center  { justify-content: center }
-.justify-between { justify-content: space-between }
-.justify-around  { justify-content: space-around }
+.#{$utility-prefix}justify-start   { justify-content: flex-start }
+.#{$utility-prefix}justify-end     { justify-content: flex-end }
+.#{$utility-prefix}justify-center  { justify-content: center }
+.#{$utility-prefix}justify-between { justify-content: space-between }
+.#{$utility-prefix}justify-around  { justify-content: space-around }
 
-.content-start   { align-content: flex-start }
-.content-end     { align-content: flex-end }
-.content-center  { align-content: center }
-.content-between { align-content: space-between }
-.content-around  { align-content: space-around }
-.content-stretch { align-content: stretch }
+.#{$utility-prefix}content-start   { align-content: flex-start }
+.#{$utility-prefix}content-end     { align-content: flex-end }
+.#{$utility-prefix}content-center  { align-content: center }
+.#{$utility-prefix}content-between { align-content: space-between }
+.#{$utility-prefix}content-around  { align-content: space-around }
+.#{$utility-prefix}content-stretch { align-content: stretch }
 
-/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex-auto {
+.#{$utility-prefix}flex-auto {
   flex: 1 1 auto;
   min-width: 0; /* 1 */
   min-height: 0; /* 1 */
 }
-.flex-none { flex: none }
+.#{$utility-prefix}flex-none { flex: none }
 
-.order-0 { order: 0 }
-.order-1 { order: 1 }
-.order-2 { order: 2 }
-.order-3 { order: 3 }
-.order-last { order: 99999 }
+.#{$utility-prefix}order-0 { order: 0 }
+.#{$utility-prefix}order-1 { order: 1 }
+.#{$utility-prefix}order-2 { order: 2 }
+.#{$utility-prefix}order-3 { order: 3 }
+.#{$utility-prefix}order-last { order: 99999 }
 
 // Typography
 
-.font-family-inherit { font-family: inherit }
-.font-size-inherit { font-size: inherit }
-.text-decoration-none { text-decoration: none }
+.#{$utility-prefix}font-family-inherit { font-family: inherit }
+.#{$utility-prefix}font-size-inherit { font-size: inherit }
+.#{$utility-prefix}text-decoration-none { text-decoration: none }
 
-.bold    { font-weight: $font-weight-bold; }
-.regular { font-weight: normal }
-.italic  { font-style: italic }
-.caps    { text-transform: uppercase; }
+.#{$utility-prefix}bold    { font-weight: $font-weight-bold; }
+.#{$utility-prefix}regular { font-weight: normal }
+.#{$utility-prefix}italic  { font-style: italic }
+.#{$utility-prefix}caps    { text-transform: uppercase; }
 
-.left-align   { text-align: left }
-.center       { text-align: center }
-.right-align  { text-align: right }
-.justify      { text-align: justify }
+.#{$utility-prefix}left-align   { text-align: left }
+.#{$utility-prefix}center       { text-align: center }
+.#{$utility-prefix}right-align  { text-align: right }
+.#{$utility-prefix}justify      { text-align: justify }
 
-.nowrap { white-space: nowrap }
-.break-word { word-wrap: break-word }
+.#{$utility-prefix}nowrap { white-space: nowrap }
+.#{$utility-prefix}break-word { word-wrap: break-word }
 
-.list-style-none { list-style: none }
-.underline { text-decoration: underline }
+.#{$utility-prefix}list-style-none { list-style: none }
+.#{$utility-prefix}underline { text-decoration: underline }
 
-.truncate {
+.#{$utility-prefix}truncate {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.list-reset {
+.#{$utility-prefix}list-reset {
   list-style: none;
   padding-left: 0;
 }
+
+.#{$utility-prefix}img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;

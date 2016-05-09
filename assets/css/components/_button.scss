@@ -1,0 +1,29 @@
+@mixin button($btn-color, $btn-text-color) {
+  background: $btn-color;
+  padding: $btn-padding;
+  color: $btn-text-color;
+  border-radius: $global-radius;
+  border: 2px solid $btn-color;
+
+  display: inline-block;
+  text-decoration: none;
+
+  position: relative;
+  &:active {
+    top: 1px;
+  }
+  &:hover {
+    background: darken($btn-color, 5%);
+  }
+}
+
+.btn-primary {
+  @include button($color-primary, $btn-text-color)
+}
+.btn-secondary {
+  @include button($color-secondary, $btn-text-color)
+}
+
+.btn--small {
+  padding: $btn-padding / 2;
+}
