@@ -23,8 +23,7 @@
 }
 
 body {
-  font-size: $global-font-size;
-  @include responsive-font(3vw, 15px, 16px);
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "default", min)), rem-calc(map-deep-get($fontSizes, "default", max)));
   font-family: $font-family;
   line-height: $line-height;
 }
@@ -33,32 +32,36 @@ p {
   margin-bottom:0.8rem;
 }
 
-.hero-heading {
-  @include responsive-font(3vw, 48px, 64px);
+.text-giga {
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "giga", min)), rem-calc(map-deep-get($fontSizes, "giga", max)));
 }
 
 h1,
 .h1 {
-  @include responsive-font(3vw, 28px, 32px);
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "h1", min)), rem-calc(map-deep-get($fontSizes, "h1", max)));
 }
 
 h2,
 .h2 {
-  @include responsive-font(3vw, 21px, 24px);
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "h2", min)), rem-calc(map-deep-get($fontSizes, "h2", max)));
 }
 
 h3,
 .h3 {
-  @include responsive-font(3vw, 18px, 21px);
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "h3", min)), rem-calc(map-deep-get($fontSizes, "h3", max)));
 }
 
 h4,
 .h4 {
-  @include responsive-font(3vw, 16px, 18px);
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "h4", min)), rem-calc(map-deep-get($fontSizes, "h4", max)));
 }
 
 .text-small {
-  @include responsive-font(3vw, 13px, 14px);
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "small", min)), rem-calc(map-deep-get($fontSizes, "small", max)));
+}
+
+.text-lead {
+  @include responsive-font(3vw, rem-calc(map-deep-get($fontSizes, "lead", min)), rem-calc(map-deep-get($fontSizes, "lead", max)));
 }
 
 .text-bold {
@@ -75,10 +78,6 @@ h4,
 
 .text-error {
   color: $color-error;
-}
-
-.lead {
-  @include responsive-font(3vw, 18px, 21px);
 }
 
 .h1,

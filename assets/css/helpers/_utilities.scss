@@ -6,11 +6,11 @@
 
 // Display
 
-.#{$utility-prefix}inline       { display: inline }
-.#{$utility-prefix}block        { display: block }
-.#{$utility-prefix}inline-block { display: inline-block }
-.#{$utility-prefix}table        { display: table }
-.#{$utility-prefix}table-cell   { display: table-cell }
+.#{$utility-prefix}display-inline       { display: inline }
+.#{$utility-prefix}display-block        { display: block }
+.#{$utility-prefix}display-inline-block { display: inline-block }
+.#{$utility-prefix}display-table        { display: table }
+.#{$utility-prefix}display-table-cell   { display: table-cell }
 
 .#{$utility-prefix}overflow-hidden { overflow: hidden }
 .#{$utility-prefix}overflow-scroll { overflow: scroll }
@@ -23,8 +23,8 @@
 }
 .#{$utility-prefix}clearfix:after { clear: both }
 
-.#{$utility-prefix}left  { float: left }
-.#{$utility-prefix}right { float: right }
+.#{$utility-prefix}float-left  { float: left }
+.#{$utility-prefix}float-right { float: right }
 
 .#{$utility-prefix}fit { max-width: 100% }
 
@@ -106,6 +106,12 @@
 }
 
 .#{$utility-prefix}img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.#{$utility-prefix}img-fluid {
   display: block;
   max-width: 100%;
   height: auto;
+}

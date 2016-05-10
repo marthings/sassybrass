@@ -1,0 +1,13 @@
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-styled {
+  @include list-reset;
+  > li {
+    border-bottom: 1px solid $global-border;
+    padding: $global-padding / 2;
+  }
+}

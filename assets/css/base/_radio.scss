@@ -1,0 +1,54 @@
+// Radio
+
+.radio {
+  position: relative;
+  display: inline-block;
+}
+
+input[type=radio].input-radio {
+  opacity: 0;
+  float: left;
+}
+
+input[type=radio].input-radio + .input-label {
+  margin: 0 10px 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=radio].input-radio + .input-label ~ .input-label {
+  margin: 0 0 0 40px;
+}
+
+input[type=radio].input-radio + .input-label::before {
+  content: ' ';
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: white;
+  border: 2px solid $global-border;
+}
+
+input[type=radio].input-radio + .input-label::after {
+  content: ' ';
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  margin: 6px;
+  display: block;
+  z-index: 1;
+  background: $color-focus;
+  transition: all .3s ease;
+  transform: scale(0);
+  opacity: 0;
+}
+
+input[type=radio].input-radio:checked + .input-label::after {
+  transform: scale(1);
+  opacity: 1;
+}

@@ -1,0 +1,21 @@
+.table {
+  width: 100%;
+  th,
+  td {
+    padding: $global-padding / 2;
+  }
+  th {
+    background: $table-th-background;
+    color: $table-th-color;
+    text-align: left;
+    &:first-child {
+      border-radius: $global-radius 0 0 0;
+    }
+    &:last-child {
+      border-radius: 0 $global-radius 0 0;
+    }
+  }
+  td {
+    border-bottom: 1px solid $global-border;
+  }
+}
